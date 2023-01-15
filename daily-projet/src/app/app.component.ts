@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'daily-projet';
+  color = 'blue';
+
+  productColor(price:number){
+
+    if(price > 300){
+
+      return 'highlightDirective'
+    }
+    return 'color'
+}
+
 }
